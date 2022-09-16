@@ -20,11 +20,10 @@ async def must_join_channel(bot: Client, msg: Message):
                 link = chat_info.invite_link
             try:
                 await msg.reply(
-                    f"⚠️︙عذراً، عليك الانضمام الى هذهِ القناة أولاً
-⚠️︙اشترك ثم أرسل : /start",
+                    f"⚠️︙عذراً عليك الانضمام الى هذهِ القناة أولاً :",
                     disable_web_page_preview=True,
                     reply_markup=InlineKeyboardMarkup([
-                        [InlineKeyboardButton(u"{Mas_NAME}", url=link)]
+                        [InlineKeyboardButton("{Mas_NAME}", url=link)]
                     ])
                 )
                 await msg.stop_propagation()
