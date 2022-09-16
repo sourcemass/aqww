@@ -114,6 +114,14 @@ Join_CHANNEL = getenv(
 
 )  # Example:- https://t.me/alhajji_supprot
 
+YAFA_NAME = getenv(
+    "Channel_NAME", "Source Mas"
+)  # اسم قناتك
+
+CHANNEL_SUDO = getenv(
+    "CHANNEL_SUDO", "source_maas"
+)  # معرف قناتك بدون @
+
 # Set it in True if you want to leave your assistant after a certain amount of time. [Set time via AUTO_LEAVE_ASSISTANT_TIME]
 
 AUTO_LEAVING_ASSISTANT = getenv("AUTO_LEAVING_ASSISTANT", None)
