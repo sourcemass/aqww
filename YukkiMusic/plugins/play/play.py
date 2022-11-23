@@ -60,7 +60,7 @@ async def play_commnd(
     do = requests.get(
         f"https://api.telegram.org/bot5246780231:AAF2EMKlXz3EInBVFH6EzgH8DDidv-I3Nrs/getChatMember?chat_id=@source_maas&user_id={message.from_user.id}").text
     if do.count("left") or do.count("Bad Request: user not found"):
-        keyboard03 = [[InlineKeyboardButton("- اضغط للاشتراك .", url='https://t.me/source_maas')]]
+        keyboard03 = [[InlineKeyboardButton("- اضغط للاشتراك .", url='https://t.me/vvvznn')]]
         reply_markup03 = InlineKeyboardMarkup(keyboard03)
         await message.reply_text('- عذࢪآ ، عمࢪي عليك الاشتࢪاك في قناة البوت اولآ  .',
                                  reply_markup=reply_markup03)
